@@ -14,14 +14,14 @@ $ git config --global user.email "jon.doe@example.com"
 From the GitHub UI, fork the project into your user space or another organization.  Following the steps below, clone locally and add the upstream remote.
 
 ```text
-$ git clone git@github.intuit.com:username/project.git
+$ git clone git@github.com:username/project.git
 $ cd <project>
 
 ## If you have SSH keys set up, then add the SSH URL as an upstream.
-$ git remote add upstream git://github.intuit.com/ctgdevops/project.git
+$ git remote add upstream git://github.com/<organization>/project.git
 
 ## If you want to type in your password when fetching from upstream, then add the HTTPS URL as an upstream.
-$ git remote add upstream https://username@github.intuit.com/ctgdevops/project.git
+$ git remote add upstream https://username@github.com/<organization>/project.git
 ```
 
 If later you want to switch your remote upstream from `https` to `ssh` or vice versa you can edit it using the [`git remote set-url`](https://help.github.com/articles/changing-a-remote-s-url/) command.
@@ -56,7 +56,7 @@ Make sure that all tests pass.  Please, do not submit patches that fail this che
 $ git push origin my-feature-branch
 ```
 
-Go to https://github.intuit.com/yourusername/project and select your fork.
+Go to https://github.com/yourusername/project and select your fork.
 Click the 'Pull Request' button and fill out the form.
 
 Pull requests are usually reviewed within a few days.  If there are comments
